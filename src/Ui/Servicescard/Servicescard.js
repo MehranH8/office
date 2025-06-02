@@ -12,7 +12,7 @@ const Servicescard = (props) => {
                     </span>
                 </div>
                 <div className="mb-6">
-                    <h4 className="text-[18px] font-bold mb-2">
+                    <h4 className="bold-title mb-2">
                         {props.title}
                     </h4>
                     <p className="text-[#5c6b8d] text-[16px] text-justify sm:text-start">
@@ -20,10 +20,10 @@ const Servicescard = (props) => {
                     </p>
                 </div>
                 <div className="flex flex-col mb-6">
-                    <span className="text-[14px] text-[#5c6b8d] mb-2">
+                    <span className="normal-text text-[#5c6b8d] mb-2">
                         شروع از :
                     </span>
-                    <span className="text-[20px] font-bold text-[#5f57f9]">
+                    <span className="bold-title font-bold text-[#5f57f9]">
                         <span className="ml-1"> ماهانه </span> {props.price}
                     </span>
                 </div>
@@ -33,7 +33,7 @@ const Servicescard = (props) => {
                     <span className="mt-1 text-[18px] text-[#5f57f9]">
                         <FaCheck />
                     </span>
-                    <p className="text-[16px] text-justify">
+                    <p className="justify-text">
                         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
 
                     </p>
@@ -42,7 +42,7 @@ const Servicescard = (props) => {
                     <span className="mt-1 text-[18px] text-[#5f57f9]">
                         <FaCheck />
                     </span>
-                    <p className="text-[16px] text-justify">
+                    <p className="justify-text">
                         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
 
                     </p>
@@ -51,13 +51,13 @@ const Servicescard = (props) => {
                     <span className="mt-1 text-[18px] text-[#5f57f9]">
                         <FaCheck />
                     </span>
-                    <p className="text-[16px] text-justify">
+                    <p className="justify-text">
                         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
 
                     </p>
                 </div>
                 <div>
-                    <span className="text-[18px] font-bold text-[#5f57f9] hover:text-[#343090] transition-colors duration-300">
+                    <span className="bold-title text-[#5f57f9] hover:text-[#343090] transition-colors duration-300">
                         <Link to={props.link}>
                             نمایش
                         </Link>

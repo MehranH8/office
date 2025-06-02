@@ -30,30 +30,30 @@ export function NavbarWithSolidBackground() {
       <li
         className="mx-1"
       >
-        <Link to="/" className="flex hover:text-[#5f59f7] transition-colors duration-200 items-center text-[#111827] text-[16px] md:text-[14px] lg:text-[16px]">
+        <Link onClick={()=>setOpenNav(false)} to="/" className="flex hover:text-[#5f59f7] transition-colors duration-200 items-center text-[#111827] text-[14px] md:text-[12px] lg:text-[14px]">
           خانه
         </Link>
       </li>
       <li
       >
-        <Link to="/services" className="flex hover:text-[#5f59f7] transition-colors duration-200 items-center text-[#111827] text-[16px] md:text-[14px] lg:text-[16px]">
+        <Link onClick={()=>setOpenNav(false)} to="/services" className="flex hover:text-[#5f59f7] transition-colors duration-200 items-center text-[#111827] text-[14px] md:text-[12px] lg:text-[14px]">
           خدمات
         </Link>
       </li>
       <li
       >
-        <Link to="/locations" className="flex hover:text-[#5f59f7] transition-colors duration-200 items-center text-[#111827] text-[16px] md:text-[14px] lg:text-[16px]">
+        <Link onClick={()=>setOpenNav(false)} to="/locations" className="flex hover:text-[#5f59f7] transition-colors duration-200 items-center text-[#111827] text-[14px] md:text-[12px] lg:text-[14px]">
           دفاتر ما
         </Link>
       </li>
       <li      >
-        <Link to="/about" className="flex hover:text-[#5f59f7] transition-colors duration-200 items-center text-[#111827] text-[16px] md:text-[14px] lg:text-[16px]">
+        <Link onClick={()=>setOpenNav(false)} to="/about" className="flex hover:text-[#5f59f7] transition-colors duration-200 items-center text-[#111827] text-[14px] md:text-[12px] lg:text-[14px]">
           درباره ما
         </Link>
       </li>
       <li
       >
-        <Link to="/support" className="flex hover:text-[#5f59f7] transition-colors duration-200 items-center text-[#111827] text-[16px] md:text-[14px] lg:text-[16px]">
+        <Link onClick={()=>setOpenNav(false)} to="/support" className="flex hover:text-[#5f59f7] transition-colors duration-200 items-center text-[#111827] text-[14px] md:text-[12px] lg:text-[14px]">
           پشتیبانی
         </Link>
       </li>
@@ -72,9 +72,9 @@ export function NavbarWithSolidBackground() {
           </Link>
           <div className="mr-4 hidden md:block">{navList}</div>
           <button
-            className="hidden md:inline-block bg-[#343090] text-white py-3 px-4 hover:bg-[#222] transition-colors duration-500  rounded-[4px]"
+            className="hidden md:inline-block bg-[#343090] text-white py-2 px-3 hover:bg-[#222] transition-colors duration-500  rounded-[4px]"
           >
-            <span className="text-[14px] lg:text-[16px]">
+            <span className="text-[12px] lg:text-[14px]">
               <Link to="/support">
                 ارتباط با ما
               </Link>
@@ -92,10 +92,10 @@ export function NavbarWithSolidBackground() {
             )}
           </IconButton>
         </div>
-        <Collapse className="mr-auto" open={openNav}>
+        <Collapse className="mr-auto shadow-sm" open={openNav}>
           {navList}
           <button className=" md:hidden bg-[#343090] text-white py-2 px-4 hover:bg-[#222] transition-colors duration-500  rounded-[4px] w-[85%] mx-auto mb-10 mt-6 flex justify-center" >
-            <span className="text-[16px]">ارتباط با ما</span>
+            <span className="text-[14px]">ارتباط با ما</span>
           </button>
         </Collapse>
       </Navbar>

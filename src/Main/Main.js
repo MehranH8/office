@@ -8,6 +8,7 @@ import Services from "../components/Services/Services";
 import Servicedetail from "../components/Servicedetail/Servicedetail";
 import Locationsdetail from "../components/Locationsdetail/Locationsdetail";
 import Home from "../components/Home/Home";
+import Page404 from "../Ui/Page404/Page404"
 
 
 
@@ -23,6 +24,7 @@ const Main = () => {
                 <Route path="/services" element={<Services />} />
                 <Route path="/services/detail/:id" element={<Servicedetail/>}/>
                 <Route path="/locations/detail/:id" element={<Locationsdetail/>}/>
+                <Route path="*" element={<Page404/>}/>
             </Routes>
             <Footer/>
         </div>
